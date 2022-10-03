@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+body {
+  margin: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body header {
+  background-color: #541554;
+  width: 100%;
+  height: 100vh;
+}
+body header nav {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+}
+body header nav .header-first-part {
+  display: flex;
+  justify-content: space-around;
+}
+body header nav .header-first-part .header-first-part-brand {
+  display: flex;
+  align-items: center;
+  border: 2px solid red;
+  margin-bottom: 10px;
+}
+body header nav .header-first-part .header-first-part-brand h1 {
+  margin-left: 10px;
+  color: white;
+  font-size: 35px;
+}
+body header nav .header-first-part .header-first-part-menu {
+  display: flex;
+  align-items: center;
+}
+body header nav .header-first-part .header-first-part-menu i {
+  font-size: 23px;
+  color: white;
+}
+body header nav .header-second-part {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  border: 2px red solid;
+}
+body header nav .header-second-part h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+}
+body header nav .header-second-part p {
+  margin-top: -15px;
+  text-align: center;
+  line-height: 25px;
+  color: white;
+}
+body header nav .header-buttons {
+  background-color: chartreuse;
+}
+body header img {
+  height: 35px;
+}/*# sourceMappingURL=style.css.map */
