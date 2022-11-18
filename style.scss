@@ -6,8 +6,8 @@ $principal-color: rgb(84, 21, 84);
 body {
   margin: 0px;
   font-family: "Source Sans Pro", sans-serif;
+  background-color: $principal-color;
   header {
-    background-color: $principal-color;
     width: 100%;
     height: 100vh;
 
@@ -105,84 +105,226 @@ body {
   }
 
   main {
-    height: 200vh;
-    width: 100%;
+    height: 450vh;
+    width: fit-content;
     background-color: #f4ede4;
-    border: 2px red solid;
-  }
+    // border: 2px red solid;
+    .video-container {
+      height: 40vh;
+      width: 100%;
+      // border: 2px blue solid;
+      background-color: $principal-color;
+    }
 
-  .video-container {
-    height: 30vh;
-    // border: 2px blue solid;
-  }
+    .video-container video {
+      height: 210px;
+      max-height: fit-content;
+      max-width: fit-content;
+    }
 
-  .video-container video {
-    height: 210px;
-  }
+    .main-container-companies {
+      // border: 2px solid red;
+    }
 
-  .main-container-companies {
-    // border: 2px solid red;
-  }
+    .main-container-companies h1 {
+      font-size: 18px;
+      text-align: center;
+    }
 
-  .main-container-companies h1 {
-    font-size: 18px;
-    text-align: center;
-  }
+    .main-container-companies-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 40vh;
+      margin-bottom: 40px;
+      // border: 2px solid blue;
+    }
 
-  .main-container-companies-images {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 40vh;
-    margin-bottom: 40px;
-    // border: 2px solid blue;
-  }
+    .main-container-companies img {
+      height: 70px;
+      margin-left: 10px;
+      filter: brightness(1.1);
+      mix-blend-mode: multiply;
+    }
 
-  .main-container-companies img {
-    height: 70px;
-    margin-left: 10px;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-  }
+    .main-container-companies img:nth-child(1) {
+      padding-top: 20px;
+      height: 40px;
+    }
 
-  .main-container-companies img:nth-child(1) {
-    padding-top: 20px;
-    height: 40px;
-  }
+    .main-container-companies img:nth-child(2) {
+      padding-top: 15px;
+      padding-left: 7px;
+      height: 55px;
+    }
 
-  .main-container-companies img:nth-child(2) {
-    padding-top: 15px;
-    padding-left: 7px;
-    height: 55px;
-  }
+    .main-container-companies img:nth-child(3) {
+      height: 80px;
+    }
 
-  .main-container-companies img:nth-child(3) {
-    height: 80px;
-  }
-  
-  .main-container-companies img:nth-child(4) {
-    height: 50px;
-  }
-  
-  .main-container-companies img:nth-child(4) {
-    height: 50px;
-    padding-top: 40px;
-    
-  }
-  
-  .main-container-companies img:nth-child(5) {
-    height: 130px;
-    padding-left: 15px;
-    
-  }
+    .main-container-companies img:nth-child(4) {
+      height: 50px;
+    }
 
-  .main-container-companies img:nth-child(6) {
-    height: 50px;
-    padding-left: 15px;
-    
-  }
+    .main-container-companies img:nth-child(4) {
+      height: 50px;
+      padding-top: 40px;
+    }
 
-  .main-channel-box {
-    border: 2px red solid;
+    .main-container-companies img:nth-child(5) {
+      height: 130px;
+      padding-left: 15px;
+    }
+
+    .main-container-companies img:nth-child(6) {
+      height: 40px;
+      padding-left: 15px;
+    }
+
+    .main-img {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .main-channel-box {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+      padding-right: 5px;
+      padding-left: 10px;
+    }
+
+    .main-channel-box a {
+      color: #1264a3;
+      text-decoration: none;
+    }
+
+    .main-img-2 {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .main-sell-box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 10px;
+      padding-right: 15px;
+      padding-left: 15px;
+      text-align: center;
+      background-color: white;
+      height: 35vh;
+      // border: 2px red solid;
+    }
+
+    .main-sell-box h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 35px;
+    }
+
+    .main-sell-box p {
+      margin-top: -15px;
+      text-align: center;
+      line-height: 25px;
+    }
+
+    .main-buttons {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-right: 15px;
+      padding-left: 15px;
+      text-align: center;
+      background-color: white;
+      // border: 2px red solid;
+    }
+
+    .main-buttons input {
+      width: 350px;
+      height: 60px;
+      margin-top: 10px;
+      font-weight: 50px;
+      border-radius: 5px;
+    }
+
+    .main-buttons input:nth-child(1) {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 15px;
+      background-color: $principal-color;
+      color: white;
+    }
+
+    .main-buttons input:nth-child(2) {
+      color: $principal-color;
+      background-color: white;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 15px;
+    }
+
+    .main-percentages {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: white;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      height: 400px;
+
+      h1 {
+        color: rgb(84, 21, 84);
+      }
+    }
+
+    .main-secondvideo {
+      height: 300px;
+      width: 100%;
+      background-color: white;
+
+      video {
+        border-top-right-radius: 500px;
+        border-bottom-right-radius: 500px;
+        box-sizing: content-box;
+        width: 95%;
+      }
+    }
+
+    .main-clientMessage {
+      background-color: white;
+      margin-top: -20px;
+      height: 600px;
+      display: flex;
+      justify-content: center;
+
+      .main-clientMessage-content {
+        border: 2px red solid;
+        height: 90%;
+        width: 60%;
+
+        a {
+          text-decoration: none;
+          color: #1264a3;
+        }
+
+      }
+      .main-clientMessage-content p:nth-child(1) {
+        font-size: 20px;
+        font-style: italic;
+      }
+      .main-clientMessage-content p:nth-child(2) {
+        font-size: 17px;
+        font-weight: bold ;
+      }
+      .main-clientMessage-content p:nth-child(3) {
+        margin-top: -15px;
+      }
+      .main-clientMessage-content p:nth-child(5) {
+        color: grey;
+        margin-top: 50px;
+      }
+    }
   }
 }
